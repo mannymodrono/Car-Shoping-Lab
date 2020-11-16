@@ -7,7 +7,15 @@ public class CarShopping {
         int totalCost = 0;
         totalCost += base();
         totalCost += automaticWindows();
+        totalCost += keylessEntry();
+        totalCost += onStar();
+        totalCost += ABS();
+        totalCost += adjustablesPedals();
+        totalCost += sunroof();
+        totalCost += coldWeatherPackage();
+        totalCost += GPS();
         // add more methods and print total cost
+        System.out.println(totalCost);
     }
 
     public static int base() {
@@ -15,13 +23,137 @@ public class CarShopping {
         String model = in.nextLine();
         //return output based on user input
 
+        switch (model){
+            case "Model 1":
+                return 15000;
+            case "Model 2":
+                return 24000;
+            case "Model 3":
+                return 40000;
+            default:
+                return 0;
+        }
+
     }
 
     public static int automaticWindows() {
         System.out.println("Automatic Windows for $500? (y/n)");
         //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
 
     }
+
+    public static int keylessEntry() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+    public static int onStar() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
+    public static int ABS() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
+    public static int adjustablesPedals() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
+    public static int sunroof() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
+    public static int coldWeatherPackage() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
+    public static int GPS() {
+        System.out.println("Automatic Windows for $500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 500;
+            default:
+                return 0;
+        }
+
+    }
+
+
 
     //Add remaining methods
     /*
