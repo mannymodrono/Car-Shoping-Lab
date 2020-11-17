@@ -6,6 +6,7 @@ public class CarShopping {
     public static void main(String[] args) {
         int totalCost = 0;
         totalCost += base();
+        totalCost += trans();
         totalCost += automaticWindows();
         totalCost += keylessEntry();
         totalCost += onStar();
@@ -14,8 +15,10 @@ public class CarShopping {
         totalCost += sunroof();
         totalCost += coldWeatherPackage();
         totalCost += GPS();
+        totalCost += sportsPackage();
         // add more methods and print total cost
-        System.out.println(totalCost);
+        System.out.println("Customer's total is:");
+        System.out.println("$" + totalCost);
     }
 
     public static int base() {
@@ -51,13 +54,13 @@ public class CarShopping {
     }
 
     public static int keylessEntry() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("Remote keyless entry for $1000? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 1000;
             default:
                 return 0;
         }
@@ -65,13 +68,13 @@ public class CarShopping {
     }
 
     public static int onStar() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("OnStar system for $1000? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 1000;
             default:
                 return 0;
         }
@@ -80,7 +83,7 @@ public class CarShopping {
 
 
     public static int ABS() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("ABS for $500? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
@@ -95,13 +98,13 @@ public class CarShopping {
 
 
     public static int adjustablesPedals() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("Telescoping steering wheel/adjustable pedals for $1000? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 1000;
             default:
                 return 0;
         }
@@ -110,13 +113,13 @@ public class CarShopping {
 
 
     public static int sunroof() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("Sunroof for $800? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 800;
             default:
                 return 0;
         }
@@ -125,13 +128,13 @@ public class CarShopping {
 
 
     public static int coldWeatherPackage() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("Cold weather package for $1500? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 1500;
             default:
                 return 0;
         }
@@ -140,17 +143,43 @@ public class CarShopping {
 
 
     public static int GPS() {
-        System.out.println("Automatic Windows for $500? (y/n)");
+        System.out.println("GPS for $750? (y/n)");
         //return output based on user input
         String response = in.nextLine();
 
         switch(response) {
             case "y":
-                return 500;
+                return 750;
             default:
                 return 0;
         }
 
+    }
+
+    public static int sportsPackage(){
+        System.out.println("Sports package for $1500? (y/n)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "y":
+                return 1500;
+            default:
+                return 0;
+        }
+    }
+
+    public static int trans() {
+        System.out.println("Manual($0) or automatic($1000) (m/a)");
+        //return output based on user input
+        String response = in.nextLine();
+
+        switch(response) {
+            case "a":
+                return 1000;
+            default:
+                return 0;
+        }
     }
 
 
